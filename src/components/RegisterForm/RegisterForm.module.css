@@ -1,0 +1,28 @@
+.title{
+	margin-bottom: 48px;
+}
+
+.inputs{
+	display: flex;
+	flex-direction: column;
+	gap: 52px;
+	margin-bottom: 56px;
+}
+
+.button{
+	max-width: 448px;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	height: 64px;
+	margin-bottom: 20px;
+}
+
+.link {
+	text-align: center;
+}
+
+.link a{
+	font-weight: 700;
+	color: var(--dark-blue);
+}

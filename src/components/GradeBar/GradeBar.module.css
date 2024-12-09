@@ -1,0 +1,46 @@
+.small_bar {
+	width: 48px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+.red_bar {
+	background-color: var(--light-red);
+	color: var(--red);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.red_bar:hover{
+	background-color: var(--red);
+	color: #fff;
+}
+
+.green_bar {
+	background-color: var(--light-green);
+	color: var(--green);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.green_bar:hover{
+	background-color: var(--green);
+	color: #fff;
+}
+
+.grey_bar {
+	background-color: var(--light-orange);
+	color: var(--orange);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.grey_bar:hover{
+	background-color: var(--grey);
+	color: #fff;
+}

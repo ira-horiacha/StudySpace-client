@@ -1,0 +1,114 @@
+.checkbox {
+	display: none;
+}
+
+.checkboxLabel {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #9c9c9c;
+	border-radius: 50%;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	padding: 0;
+}
+
+.checkboxLabel::after {
+	content: '';
+	width: 32px;
+	height: 32px;
+	background-color: var(--light-blue);
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	border-radius: 50%;
+	transition: transform 0.2s ease;
+}
+
+.checkbox:checked + .checkboxLabel::after {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.plan {
+	display: flex;
+	padding: 12px 48px;
+	gap: 24px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.plan_name {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.plan_date {
+	font-weight: 400;
+	color: #5d7cfb;
+}
+
+.new_plan {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.plan_input {
+	height: 24px;
+	border: none;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 0 5px;
+}
+
+.date_input {
+	text-align: center;
+	background-color: var(--light-blue);
+	height: 24px;
+	border-radius: 20px;
+	font-size: 10px;
+	line-height: 15px;
+	color: var(--dark-blue);
+	width: 92px;
+	display: inline-block;
+}
+
+.drop_list {
+	background-color: var(--light-grey);
+	width: fit-content;
+	border-radius: 20px;
+	width: 116px;
+	padding: 1px 10px;
+	display: inline-block;
+	margin-left: 16px;
+}
+
+.btn_group{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.save_button{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+
+.cancel_button{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+
+.save_button:hover,
+.cancel_button:hover{
+	background-color: var(--light-blue);
+}

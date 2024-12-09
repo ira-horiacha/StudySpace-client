@@ -1,0 +1,178 @@
+.container {
+	max-width: 1032px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 128px 256px 464px;
+	gap: 32px 24px;
+	position: relative;
+}
+
+.header {
+	background-color: #fff;
+	border-radius: 30px;
+	max-width: 1032px;
+	padding: 16px 48px 16px 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+}
+
+.user {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.avatar {
+	max-height: 96px;
+	max-width: 96px;
+}
+
+.learnings_wrapper {
+	display: flex;
+	align-items: center;
+	gap: 37px;
+}
+
+.learnings {
+	display: flex;
+	gap: 24px;
+}
+
+.learning_item {
+	text-align: center;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	border: 0.5px solid #9c9c9c;
+	border-radius: 30px;
+	padding: 9px 15px 9px 12px;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--grey);
+}
+
+.learning_item span {
+	color: var(--secondary-color);
+}
+
+.active_icon{
+	transition: all 0.3s ease;
+	border-radius: 50%;
+}
+
+.tasks_icon{
+	transition: all 0.3s ease-in-out;
+	border-radius: 20px;
+}
+
+.learning_item:hover .tasks_icon,
+.learning_item:hover .active_icon{
+	box-shadow: 0px 4px 20px 0px #5D7CFBB2;
+}
+
+.helper{
+	display: none;
+}
+
+.add{
+	position: relative;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+
+.add:hover{
+	background-color: var(--light-blue);
+}
+
+.add:hover .helper{
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -32px;
+}
+
+.slider{
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+}
+
+.tasks{
+	margin-top: 32px;
+	background-color: #fff;
+	border-radius: 30px;
+	padding: 32px 0;
+	max-height: 432px;
+	height: 100%;
+}
+
+.overdue .task_title{
+	color: #FF5756;
+}
+
+.overdue .task_date{
+	color: #f09595;
+}
+
+.tasks_header{
+	padding: 0 32px 30px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.tasks_wrapper{
+	max-height: 278px;
+	overflow-y: auto;
+}
+
+.task{
+	padding: 4px 48px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.task_title{
+	color: var(--dark-blue);
+	font-weight: 600;
+}
+
+.task_date{
+	color: #5D7CFB;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.add_wrapper{
+	padding: 64px 48px;
+	background-color: #fff;
+	box-shadow: 0px 4px 30px 0px #00000033;
+	border-radius: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 552px;
+	width: 100%;
+}
+
+.add_title{
+	text-align: center;
+	margin-bottom: 65px;
+}
+
+.join_button{
+	margin-top: 48px;
+	width: 100%;
+	height: 64px;
+}

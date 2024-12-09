@@ -1,0 +1,60 @@
+.container {
+	max-width: 600px;
+	margin: auto;
+	padding-top: 112px;
+	padding-bottom: 112px;
+}
+
+.logo {
+	position: absolute;
+	left: 48px;
+	top: 48px;
+	width: 128px;
+}
+
+.title {
+	text-align: center;
+}
+
+.subtitle{
+	margin-bottom: 64px;
+}
+
+.wrapper{
+	text-align: center;
+	margin-top: 48px;
+	padding: 84px 10px 56px;
+	background-color: #fff;
+	border-radius: 30px;
+}
+
+.choice_wrapper{
+	max-width: 456px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-bottom: 104px;
+}
+
+.choice{
+	padding: 17px 10px;
+}
+
+.footer a{
+	font-weight: 700;
+	color: var(--dark-blue);
+}
+
+
+.form{
+	border-radius: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 608px;
+	background-color: #fff;
+	width: 100%;
+	padding: 64px 100px 48px;
+}

@@ -1,0 +1,152 @@
+:root {
+	--primary-color: #2E2E2E;
+	--secondary-color: #4E4E4E;
+
+	--grey: #9C9C9C;
+	--light-grey: #F5F5F5;
+
+	--light-blue: #bac8ff;
+	--dark-blue: #1018d0;
+
+	--red: #FF5756;
+	--light-red: #FFE2E3;
+
+	--green: #29B76C;
+	--light-green: #DBF4E8;
+
+	--orange: #F0BB54;
+	--light-orange: #F4EFDB;
+
+	--primary-bg: #5D7CFB;  
+	--secondary-bg: #EEEEEE;
+
+	--primary-color-btn: #FFFFFF;
+	--secondary-color-btn: #5D7CFB;
+
+}
+
+
+@font-face {
+	font-family: 'Vindea';
+	src: url('../fonts/Vindea.woff') format('woff'),
+		url('../fonts/Vindea.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	font-style: normal;
+	background-color: #f5f5f5;
+	padding: 0;
+	margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.primary_btn {
+	background: var(--primary-bg);
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	color: var(--primary-color-btn);
+	border-radius: 20px;
+	border: none;
+	transition: all 0.3s;
+}
+
+.primary_btn:hover {
+	box-shadow: 0px 4px 20px 0px #5d7cfbb2;
+}
+
+.secondary_btn {
+	background-color: var(--secondary-bg);
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	color: var(--secondary-color-btn);
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.secondary_btn:hover {
+	background-color: var(--light-blue);
+	color: var(--dark-blue);
+}
+
+input {
+	font-family: inherit;
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Vindea';
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 68.16px;
+}
+
+h2 {
+	font-family: 'Poppins';
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 48px;
+}
+
+h3 {
+	font-family: 'Poppins';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+h4{
+	font-family: 'Poppins';
+	font-weight: 500;
+}
+
+h5{
+	font-family: 'Poppins';
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 600;
+	color: var(--secondary-color);
+}
+
